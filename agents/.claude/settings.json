@@ -25,7 +25,8 @@
       "Bash(codex:*)",
       "Bash(gemini:*)",
       "Bash(python /home/sjj/.claude/skills/collaborating-with-gemini/scripts/gemini_bridge.py:*)",
-      "Bash(python /home/sjj/.claude/skills/collaborating-with-codex/scripts/codex_bridge.py:*)"
+      "Bash(python /home/sjj/.claude/skills/collaborating-with-codex/scripts/codex_bridge.py:*)",
+      "Bash(uv run python -c:*)"
     ],
     "defaultMode": "acceptEdits"
   },
