@@ -16,6 +16,8 @@
 - 默认使用 `uv` 管理 Python 环境与依赖。
 - 安装/新增依赖优先使用 `uv add <package>`。
 - 运行 Python 脚本优先使用 `uv run python <script.py>`（需要传参时同理追加参数）。
+- 配置优先使用 `Hydra` + `YAML`，避免用 `argparse` 堆参数。
+- 深度学习项目优先使用 `PyTorch Lightning`。
 
 ## 代码库上下文全量检索（augment-context-engine MCP）
 

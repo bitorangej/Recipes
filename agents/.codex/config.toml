@@ -3,7 +3,7 @@
 # ----------------------------------------------
 model_provider = "codex-for-me"
 model = "gpt-5.2"
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 disable_response_storage = true
 
 [features]
@@ -16,6 +16,7 @@ base_url = "https://api-vip.codex-for.me/v1"
 wire_api = "responses"
 requires_openai_auth = true
 
+# MCP 配置
 [mcp_servers."augment-context-engine"]
 command = "auggie"
 args = ["--mcp"]
@@ -106,3 +107,15 @@ trust_level = "trusted"
 
 [projects."/home/sjj/Workspace/Recipes"]
 trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/AnomalyDetection/Ablation"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/AnomalyDetection/Ablation/MTSAD"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/MasterThesis"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.2-codex"
