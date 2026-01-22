@@ -22,7 +22,7 @@ command = "auggie"
 args = ["--mcp"]
 
 [mcp_servers."augment-context-engine".env]
-AUGMENT_API_TOKEN = "ace_a71a44bc0123bbfc54cabc23bd67e767ec48a0ce"
+AUGMENT_API_TOKEN = "ace_11b295b5d21cbe80d6067d96f8d2e7f897d228b7"
 AUGMENT_API_URL = "https://acemcp.heroman.wtf/relay/"
 
 [mcp_servers.tavily]
@@ -115,6 +115,12 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/home/sjj/Workspace/MasterThesis"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/Zotero/zotero-pdf2zh/server"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/YES"]
 trust_level = "trusted"
 
 [notice.model_migrations]
