@@ -123,5 +123,11 @@ trust_level = "trusted"
 [projects."/home/sjj/Workspace/YES"]
 trust_level = "trusted"
 
+[projects."/home/sjj/Workspace/Lab/WireGuard"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/AD/MasterThesis"]
+trust_level = "trusted"
+
 [notice.model_migrations]
 "gpt-5.2" = "gpt-5.2-codex"
