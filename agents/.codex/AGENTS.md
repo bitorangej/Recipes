@@ -31,9 +31,11 @@
 
 ## Python 项目约定
 
-- 默认使用 `uv` 管理 Python 环境与依赖。
-- 安装/新增依赖优先使用 `uv add <package>`。
-- 运行 Python 脚本优先使用 `uv run python <script.py>`（需要传参时同理追加参数）。
+- 我的 Python 项目**一律**由 `uv` 管理，并使用项目目录内的 `.venv/`（`uv` 自动创建/复用；无需 `python -m venv`/`virtualenv`）。
+- 目录中若已存在 Python 项目但**不是** `uv` 管理，可视为第三方项目：不要擅自 `uv init` / `uv add` / `uv sync` 或引入 `.venv/`（除非用户明确要求迁移）。
+- 新建 Python 项目：使用 `uv init`；依赖用 `uv add <package>`；需要落地环境时用 `uv sync`。
+- 运行 Python：在项目根目录直接用 `uv run python <script.py>`（需要传参时同理追加参数）；不要手动激活 `.venv`。
+- `uv` 缓存：不要显式设置 `--cache-dir` / `UV_CACHE_DIR` / `[tool.uv].cache-dir`，也不要为了 `uv` 改写 `XDG_CACHE_HOME`；不要把缓存指到 `/tmp/uv` 或项目内目录；让 `uv` 使用默认缓存位置。若沙盒写入限制导致需要改缓存位置，优先申请更高权限运行命令，而不是改写缓存路径。
 - 配置优先使用 `Hydra` + `YAML`，避免用 `argparse` 堆参数。
 - 深度学习项目优先使用 `PyTorch Lightning`。
 
