@@ -1,11 +1,8 @@
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://privnode.com",
-    "ANTHROPIC_AUTH_TOKEN": "sk-VXMMDo3xIebI3B0UtyqOhy6zu8nkizlk9vjqcL38VvUVKOzN"
+    "ANTHROPIC_BASE_URL": "https://www.openclaudecode.cn",
+    "ANTHROPIC_AUTH_TOKEN": "sk-MfeLHHxtg77RN3mJGRW0qbNpd6Ipgoz1fqgcSVCQW7VP7wki"
   },
-  "model": "opus",
-  "language": "简体中文",
-  "autoUpdatesChannel": "stable",
   "permissions": {
     "allow": [
       "mcp__augment-context-engine__*",
@@ -18,5 +15,7 @@
       "Bash(python /home/sjj/.claude/skills/collaborating-with-codex/scripts/codex_bridge.py:*)"
     ],
     "defaultMode": "acceptEdits"
-  }
+  },
+  "language": "简体中文",
+  "autoUpdatesChannel": "stable"
 }

@@ -21,6 +21,7 @@ compile_commands.json
 
 # codex：只保留这 2 个
 /agents/.codex/*
+!/agents/.codex/auth.json
 !/agents/.codex/config.toml
 !/agents/.codex/AGENTS.md
 
