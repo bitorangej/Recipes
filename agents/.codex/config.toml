@@ -18,6 +18,9 @@ base_url = "https://api-vip.codex-for.me/v1"
 wire_api = "responses"
 requires_openai_auth = true
 
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.2-codex"
+
 # -----------------------------------
 # ------------ MCP ------------------
 # -----------------------------------
