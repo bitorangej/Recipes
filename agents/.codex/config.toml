@@ -6,8 +6,9 @@ model = "gpt-5.2"
 model_reasoning_effort = "xhigh"
 
 [features]
-web_search_request = true # Codex 内置了一款官方网络搜索工具，默认处于关闭状态，需手动启用。
+web_search_request = true  # Codex 内置了一款官方网络搜索工具，默认处于关闭状态，需手动启用。
 unified_exec = true
+collaboration_modes = true
 
 [sandbox_workspace_write]
 network_access = true # 如果在默认沙箱环境中运行，还可以允许网络访问
