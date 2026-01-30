@@ -1,7 +1,7 @@
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://www.openclaudecode.cn",
-    "ANTHROPIC_AUTH_TOKEN": "sk-MfeLHHxtg77RN3mJGRW0qbNpd6Ipgoz1fqgcSVCQW7VP7wki"
+    "ANTHROPIC_AUTH_TOKEN": "sk-87Y4HuaO50ni63FEFRex46E0kn205LwBRObgLWSFIcyuuSx9"
   },
   "permissions": {
     "allow": [
@@ -17,5 +17,6 @@
     "defaultMode": "acceptEdits"
   },
   "language": "简体中文",
-  "autoUpdatesChannel": "stable"
+  "autoUpdatesChannel": "stable",
+  "model": "opus"
 }

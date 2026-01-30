@@ -4,11 +4,11 @@
 model_provider = "codex-for-me"
 model = "gpt-5.2"
 model_reasoning_effort = "xhigh"
+web_search = "live" # 联网搜索：live/cached/disabled（默认 cached）
 
 [features]
-web_search_request = true  # Codex 内置了一款官方网络搜索工具，默认处于关闭状态，需手动启用。
 unified_exec = true
-collaboration_modes = true
+# collaboration_modes = true # Plan/Code Mode
 
 [sandbox_workspace_write]
 network_access = true # 如果在默认沙箱环境中运行，还可以允许网络访问
@@ -45,13 +45,8 @@ TAVILY_API_KEY = "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"
 
 # context7
 [mcp_servers.context7]
-args = [
-    "-y",
-    "@upstash/context7-mcp",
-    "--api-key",
-    "ctx7sk-e3e2d43e-0913-4712-a2ed-404ef184dba3",
-]
-command = "npx"
+url = "https://mcp.context7.com/mcp"
+http_headers = { "CONTEXT7_API_KEY" = "ctx7sk-e3e2d43e-0913-4712-a2ed-404ef184dba3" }
 
 
 # ------------------------------------------------
