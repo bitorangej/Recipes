@@ -5,9 +5,11 @@ model_provider = "codex-for-me"
 model = "gpt-5.2"
 model_reasoning_effort = "xhigh"
 web_search = "live" # 联网搜索：live/cached/disabled（默认 cached）
+personality = "pragmatic"
 
 [features]
 unified_exec = true
+personality = true
 # collaboration_modes = true # Plan/Code Mode
 
 [sandbox_workspace_write]
@@ -43,10 +45,6 @@ args = ["-y", "tavily-mcp@latest"]
 [mcp_servers.tavily.env]
 TAVILY_API_KEY = "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"
 
-# context7
-[mcp_servers.context7]
-url = "https://mcp.context7.com/mcp"
-http_headers = { "CONTEXT7_API_KEY" = "ctx7sk-e3e2d43e-0913-4712-a2ed-404ef184dba3" }
 
 
 # ------------------------------------------------
@@ -155,4 +153,10 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/home/sjj/Workspace/codex-workflows"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/IM/MasterThesis"]
+trust_level = "trusted"
+
+[projects."/home/sjj/Workspace/Test/AI/ctx7"]
 trust_level = "trusted"
